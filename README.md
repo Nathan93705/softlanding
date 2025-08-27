@@ -9,7 +9,7 @@
 
 1. **Install the Plugin**: Add the `softlanding` plugin to your SerenityJS server's `plugins` directory.
 
-2. **Configure the Plugin**: Create a `softlanding.json` file in the plugin directory:
+2. **Configure the Plugin**: Create a `softlanding.config.json` file in the root directory:
 
 ```json
 {
@@ -29,27 +29,27 @@
 
 ## Features
 
-##### [Automatic Player Transfer]
+### [Automatic Player Transfer]
 
-Players are automatically redirected to a fallback server when the current server closes, ensuring a smooth experience.
+* Players are automatically redirected to a fallback server when the current server closes, ensuring a smooth experience.
 
-##### [Fallback Server List]
+### [Fallback Server List]
 
-Specify multiple fallback servers with addresses and ports. SoftLanding can optionally ping these servers to check availability before transferring players.
+* Specify multiple fallback servers with addresses and ports. SoftLanding can optionally ping these servers to check availability before transferring players.
 
-##### [Configurable Ping Intervals]
+### [Configurable Ping Intervals]
 
-The plugin can periodically check fallback server availability with a customizable interval in milliseconds (pingInterval).
+* The plugin can periodically check fallback server availability with a customizable interval in milliseconds (pingInterval).
 
-##### [Safe Shutdown Warnings]
+### [Safe Shutdown Warnings]
 
-Optional pre-transfer notifications can alert players before the server closes (if enabled in future versions).
+* Optional pre-transfer notifications can alert players before the server closes (if enabled in future versions).
 
-##### [Lightweight & Easy]
+### [Lightweight & Easy]
 
-Minimal setup required — just install, configure, and start your server.
+* Minimal setup required — just install, configure, and start your server.
 
-##### Configuration Options
+## Configuration Options
 
 Option Type Description
 enabled boolean Whether the plugin is enabled.
