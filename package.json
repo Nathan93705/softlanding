@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "softlanding",
+  "version": "1.0.0",
+  "author": "Nathan93705",
+  "description": "A plugin to redirect players to a different server when the server closes.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "cjs"
+    ],
+    "dts": true,
+    "clean": true,
+    "minify": true
+  },
+  "keywords": [
+    "Fallback",
+    "Networks",
+    "Redirect",
+    "Transfer",
+    "Servers",
+    "Shutdown",
+    "Failover",
+    "Proxy"
+  ],
+  "peerDependencies": {
+    "@serenityjs/core": "^0.8.7",
+    "@serenityjs/plugins": "^0.8.7"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@serenityjs/protocol": "^0.8.7",
+    "@types/node": "^24.0.14",
+    "minecraft-server-util": "^5.4.4"
+  }
+}
